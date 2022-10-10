@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #edf2f7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #654fef;
+  padding: 0.5rem 3rem;
+}
+.header h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.header img {
+  width: 40px;
+  border-radius: 50%;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+.header .navbar nav {
+  margin-right: 40px;
+}
+.header .navbar ul {
+  display: flex;
+  list-style: none;
+}
+.header .navbar a {
+  text-decoration: none;
+  transition: all 0.15s ease-in;
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.header .navbar a:hover {
+  color: rgb(27, 27, 27);
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+}
+.hamburger-menu span {
+  display: inline-block;
+  height: 3px;
+  width: 20px;
+  margin: 2px;
+  background: #fff;
+}
+
+.main {
+  display: flex;
+  margin: 2rem 3rem;
+}
+.main aside {
+  flex-direction: column;
+  width: 25%;
+  margin-right: 25px;
+  display: flex;
+  background: #fff;
+  justify-items: center;
+  align-items: center;
+  height: 600px;
+  padding: 1rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main aside div {
+  background: #654fef;
+  height: 110px;
+  width: 100%;
+  line-height: 110px;
+  margin: 20px 10px;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.main main {
+  display: flex;
+  background: #fff;
+  justify-items: center;
+  align-items: center;
+  height: 600px;
+  padding: 1rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 75%;
+  flex-direction: column;
+}
+.main main img {
+  width: 300px;
+  display: flex;
+  background: #fff;
+  justify-items: center;
+  align-items: center;
+  height: 600px;
+  padding: 1rem;
+}
+.main main h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #654fef;
+  margin: 2rem 0 3rem;
+}
+
+.cards {
+  width: calc(100% - 6rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+}
+.card .card-content {
+  line-height: 1.5rem;
+  padding: 15px;
+  background: #fff;
+}
+.card p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: rgb(27, 27, 27);
+  margin: 10px 0;
+}
+.card span {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #654fef;
+  margin: 10px 0;
+}
+
+footer {
+  display: flex;
+  background: #654fef;
+  margin-top: 30px;
+  padding: 2rem 3rem;
+}
+footer .summary {
+  width: 50%;
+}
+footer .summary p {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #fff;
+}
+footer .links {
+  padding: 0 5rem;
+}
+footer .links ul {
+  list-style: none;
+}
+footer .links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: all 0.15s ease-in;
+}
+footer .links a:hover {
+  color: rgb(27, 27, 27);
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+  .header .navbar {
+    display: none;
+  }
+  .main {
+    flex-direction: column-reverse;
+    margin: 1rem;
+  }
+  .main main {
+    width: calc(100% - 2rem);
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .main main p {
+    font-size: 1.3rem;
+  }
+  .main aside {
+    width: calc(100% - 2rem);
+    height: 600px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .summary {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .links {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
